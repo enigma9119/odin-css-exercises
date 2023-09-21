@@ -5,6 +5,9 @@ html {
 }
 
 .container {
+  display: grid;
+  grid: repeat(4, 1fr) / 1fr 4fr;
+  gap: 1rem;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -21,11 +24,13 @@ html {
 }
 
 .header {
+  grid-column: 1 / -1;
   background-color: #006157;
 }
 
 .sidebar {
-  background-color: #005B94;
+  grid-row: 2 / -2;
+  background-color: #005b94;
 }
 
 .nav {
@@ -33,10 +38,11 @@ html {
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
+  grid-column: 1 / -1;
   background-color: #393f4d;
 }
 
